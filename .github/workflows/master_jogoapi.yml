@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'jogoapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_03752352BCA1446EA26403DF11FBD44A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_214B7473196B44318B31B60A06C3A82B }}
           package: .
