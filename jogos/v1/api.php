@@ -52,9 +52,8 @@ if(isset($_GET['apicall'])){
             case 'getjogos':
                   $db= new Operacao();
                   $response['error']= false;
-                  $response['message']= "Dados Listados com sucesso."
-;
-$response['dadoslista']=$db->getjogos(); 
+                  $response['message']= "Dados Listados com sucesso.";
+                  $response['dadoslista']=$db->getjogos(); 
 
 break;
 case 'updatejogos':
