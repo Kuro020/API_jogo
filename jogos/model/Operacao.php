@@ -21,7 +21,7 @@ class Operacao{
         }
 
 
-        function getjogo(){
+        function getjogos(){
             $stmt = $this->con->prepare("Select * from jogo_tb");
         $stmt->execute();
     $stmt->bind_result($uid,$nomejogo,$imgjogo);
