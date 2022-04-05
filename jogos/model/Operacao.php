@@ -13,8 +13,8 @@ class Operacao{
         }
 
         function createjogo($campo_2,$campo_3){
-            $stmt = $this->con->prepare("INSERT INTO jogo]_tb (nomejogo,imgjogo)VALUES (?,?,)");
-            $stmt->bind_param("sss",$campo_2,$campo_3);
+            $stmt = $this->con->prepare("INSERT INTO jogo]_tb (nomejogo,imgjogo)VALUES (?,?)");
+            $stmt->bind_param("ss",$campo_2,$campo_3);
             if($stmt->execute())
             return true;
             return var_dump($stmt);
